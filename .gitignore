@@ -1,0 +1,33 @@
+# R files
+.Rhistory
+.RData
+.Rproj.user
+*.Rproj
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Large data files (uncomment if needed)
+# data/raw/*.csv
+# data/processed/*.rds
+# *.rds
+# *.csv
+
+# Logs
+*.log
+logs/
+
+# Output directories (uncomment if you want to exclude)
+# output/
+# figures/
+# tables/
