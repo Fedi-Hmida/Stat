@@ -1,0 +1,343 @@
+\documentclass[12pt,a4paper]{article}
+
+% Required packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{authblk}
+\usepackage{setspace}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage[table]{xcolor}
+\usepackage{rotating}
+
+% Page setup
+\geometry{margin=1in, headheight=14pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small 3362 J-G Zhang et al.}
+\fancyhead[R]{\small Public Health Nutrition: 19(18), 3361--3368}
+\fancyfoot[C]{\small *Corresponding author: Email \textcopyright\ The Authors 2016}
+
+% Custom commands
+\newcommand{\specialcell}[2][c]{\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+\newcommand{\specialcelll}[2][l]{\begin{tabular}[#1]{@{}l@{}}#2\end{tabular}}
+
+% Document begins
+\begin{document}
+
+% Header on first page
+\thispagestyle{fancy}
+\begin{flushleft}
+\small doi:10.1017/S136898001600197X
+\end{flushleft}
+
+% Title and authors
+\title{\textbf{Association between dietary patterns and blood lipid profiles among Chinese women}}
+\author[1]{Jiguo Zhang}
+\author[1]{Zhihong Wang}
+\author[1]{Huijun Wang}
+\author[1]{Wenwen Du}
+\author[1]{Chang Su}
+\author[1]{Ji Zhang}
+\author[1]{Hongru Jiang}
+\author[1]{Xiaofang Jia}
+\author[1]{Feifei Huang}
+\author[1,2]{Fengying Zhai}
+\author[1,*]{Bing Zhang}
+\affil[1]{National Institute for Nutrition and Health, Chinese Center for Disease Control and Prevention, No.29 Nanwei Road, Xicheng District, Beijing 100050, People's Republic of China}
+\affil[2]{Chinese Nutrition Society, Beijing, People's Republic of China}
+\affil[*]{Corresponding author}
+
+\date{\small Submitted 29 November 2015: Final revision received 19 May 2016: Accepted 20 June 2016: First published online 29 July 2016}
+
+\maketitle
+
+% Abstract
+\section*{Abstract}
+\textbf{Objective:} The present study aimed to identify dietary patterns and explore their associations with blood lipid profiles among Chinese women. \\
+\textbf{Design:} In a cross-sectional study, we identified dietary patterns using principal component analysis of data from three consecutive 24h dietary recalls. The China Health and Nutrition Survey (CHNS) collected blood samples in the morning after an overnight fast and measured total cholesterol (TC), HDL cholesterol (HDL-C), LDL cholesterol (LDL-C) and TAG. \\
+\textbf{Setting:} Data were from the 2009 wave of the CHNS. \\
+\textbf{Subjects:} We studied 2468 women aged 18--80 years from the CHNS. \\
+\textbf{Results:} We identified three dietary patterns: traditional southern (high intakes of rice, pork and vegetables), snack (high intakes of fruits, eggs and cakes) and Western (high intakes of poultry, fast foods and milk). The traditional southern pattern was inversely associated with HDL-C ($\beta = -0.68$; 95\% CI $-1.22, -0.14$; $P < 0.05$). The snack pattern was significantly associated with higher TAG ($\beta = 4.14$; 95\% CI $0.44, 7.84$; $P < 0.05$). The Western pattern was positively associated with TC ($\beta = 2.52$; 95\% CI $1.03, 4.02$; $P < 0.01$) and LDL-C ($\beta = 2.26$; 95\% CI $0.86, 3.66$; $P < 0.01$). \\
+\textbf{Conclusions:} We identified three dietary patterns that are significantly associated with blood lipid profiles. This information is important for developing interventions and policies addressing dyslipidaemia prevention among Chinese women.
+
+\section*{Keywords}
+Dietary patterns, Principal component analysis, Lipid profiles, Women, China
+
+\doublespacing
+
+\section{Introduction}
+With rapid economic growth and associated lifestyle changes in China, the prevalence of dyslipidaemia has increased dramatically and CVD have emerged as a leading cause of death in Chinese adults(1--3). A report on the status of nutrition and chronic diseases in China states that the national prevalence of dyslipidaemia in 2012 was 33.5\% among women aged 18 years or older. Dyslipidaemia is an important modifiable risk factor for the development of CVD(4,5). Effective management of dyslipidaemia is known to reduce the rate of CVD morbidity and mortality(6,7).
+
+As dietary intake is a complex exposure variable, examining and assessing the total diet requires distinct approaches. Traditional dietary analyses have had limitations, because they have focused on the relationship between individual nutrients or foods and diseases(8). Therefore dietary pattern analysis has emerged as an alternative, holistic approach(9). Dietary patterns can summarize complex dietary data to render the information more practical and meaningful than data on individual foods or nutrients for investigating diet--disease relationships, given that patterns consider total dietary intake and the collinearity between many foods and nutrients as well as the potentially synergistic effects of foods and nutrients(9,10).
+
+Some approaches have been proposed to determine dietary patterns, such as principal component analysis (PCA), cluster analysis and reduced rank regression(10). The strength of one approach is the limitation of another. PCA, the most commonly used approach, utilizes correlations that exist between different food groups to identify linear combinations of foods that are frequently consumed together. Moreover, PCA describes the actual dietary patterns of the population, so PCA patterns have public health relevance(12). Cluster analysis groups the individuals into hierarchical clusters according to the level of dissimilarity between the components of the diets of the individuals(13). Reduced rank regression is similar to PCA but requires existing evidence about factors associated with the disease in combination with exploratory statistics to extract dietary patterns that are likely to be related to a specific disease(14).
+
+Several studies among Western populations have shown the association of dietary patterns and blood lipid profiles, although the results are not consisten$\!^{(15-18)}$, Also associations between dietary patterns extracted by factor analysis and biological cardiovascular risk factors, such as serum lipids, have seldom been investigated in Asian populations, especially among women. Moreover, these findings have limited applicability to Chinese women because of culturally specific dietary patterns.
+
+China has experienced a rapid nutrition transition during the last few decades(19). The increased intake of vegetable oils and animal-source foods has been rapid and appears to be continuing, and coarse grains, legumes, vegetables and other healthful foods have declined in importance and intake levels(20). The change in dietary habits may impact the blood lipid profiles of Chinese adults. The present study identified the prevailing dietary patterns and examined their associations with blood lipid profiles among Chinese women.
+
+\section{Methods}
+\subsection{Study population}
+We used data collected by the China Health and Nutrition Survey (CHNS), which was designed to examine how the social and economic transformation in China affects the health and nutritional status of the Chinese population(21,22). The CHNS used a multistage, random-cluster process to draw the sample in nine provinces that vary in demography, geography, economic development and public resources. We used data from the surveys conducted in 2009. Our analysis included 2468 women aged 18--80 years with complete demographic, biomarker and dietary data. All women gave written informed consent for their participation in the survey. The study was approved by the institutional review boards of the University of North Carolina at Chapel Hill and the National Institute for Nutrition and Health, Chinese Center for Disease Control and Prevention.
+
+\subsection{Measures}
+Each wave of the CHNS assessed dietary intake using three consecutive 24h dietary recalls (two weekdays and one weekend day). Interviewers were trained to use standard forms to administer the dietary recalls in household interviews. The participants were asked to report the kinds and amounts of food and beverage items (measured in grams) that they ate both at home and away from home during a 24h period(23). We used the average intake of the three recalls for each individual.
+
+The CHNS collected blood samples in the morning after an overnight fast. A national laboratory in Beijing analysed all samples with strict quality control and measured total cholesterol (TC; mg/dl), HDL cholesterol (HDL-C; mg/dl), LDL cholesterol (LDL-C; mg/dl) and TAG (mg/dl). Laboratory analysis methods for the lipid profiles are described in detail elsewhere(24).
+
+A general information questionnaire collected each participant's age, education, living area, cigarette smoking habits, alcohol intake, physical activity and annual household income. Well-trained health workers measured height, weight and waist circumference following a reference protocol recommended by the WHO(25). BMI was calculated as weight divided by the square of height (kg/m$^2$).
+
+\subsection{Statistical analysis}
+We used PCA to derive food patterns (Table 1) based on the nineteen foods or food groups of the China food composition data (as detailed in the online supplementary material, Supplemental Table 1) and used mean intakes (g/d) as input values in the analysis. We conducted the analysis using the factor procedure in the statistical software package SAS version 9.2. We rotated the factors with an orthogonal transformation (varian rotation function in SAS) to achieve a more simplistic structure with greater interpretability. In considering the number of factors to retain, we evaluated eigenvalues ($>1$), scree plots and interpretability of the factors to determine which set of factors could most meaningfully describe distinct food patterns. From these analyses we selected the three-factor solution. We retained items in a factor if they had an absolute correlation $\geq0.25$ with that factor. We calculated factor loadings for each food group across the three factors and a factor score for each participant in each of the three factors, in which intakes of the nineteen food groups were weighted by their factor loadings and summed. We categorized quartiles across the score of each dietary pattern based on the distribution in the whole population and compared the following nutrient intakes according to the quartiles of dietary patterns: total energy intake; percentage of energy from carbohydrate, protein and fat; and intakes of fibre, vitamin C, vitamin A, Ca and Fe. Nutrient intake is highly correlated to energy intake, so ANCOVA was performed to calculate energy-adjusted nutrient intakes.
+
+We used multivariate linear regression analysis to evaluate the effect of dietary pattern scores on blood lipid profiles by adjusting for the potential risk factors of age (18--44, 45--59, 60--80 years), education (low, medium, high), living area (urban/rural), smoking status (yes/no), drinking status (yes/no), physical activity (continuous), annual household income (continuous), BMI (continuous) and total energy intake (continuous). We used SAS version 9.2 to perform all statistical analyses and $P < 0.05$ was considered statistically significant.
+
+\section{Results}
+\subsection{Dietary patterns}
+PCA revealed three dietary patterns: traditional southern, snack and Western. Table 1 shows the factor loadings of each pattern after orthogonal rotation. These three factors explained 26.2\% of the variance in total food intake. The traditional southern pattern (component 1), characterized by high intakes of rice, pork, vegetables and aquatic products and low consumption of wheat and other cereals, represents a typical traditional diet in southern China. The snack pattern (component 2) was highly correlated with intakes of fruits, eggs, cakes and tubers. The third component, the Western pattern, was characterized by high intakes of poultry, fast foods, milk, organ meats and soft drinks.
+
+\subsection{Association of dietary patterns with sociodemographic characteristics, lifestyle and health-related factors}
+Table 2 presents the characteristics of Chinese women across quartile categories of the dietary pattern scores. Women with high scores for the Western pattern were younger. Women with high scores for the snack pattern and the Western pattern were more likely to live in urban areas, to be current drinkers and to have better education. Women with high scores for the snack pattern were more likely to be current smokers. For the health-related factors, women in the top quartile of the snack pattern had higher BMI and waist circumference than those in the lowest quartile. In contrast, women in the top quartile of the traditional southern and the Western patterns had lower BMI and waist circumference. In addition, women in the top quartile of the Western pattern had higher LDL-C level and lower TAG level than those in the lowest quartile.
+
+\subsection{Association of dietary patterns with nutrient intakes}
+Women with higher scores for the traditional southern pattern had higher total energy intake; higher percentages of energy from protein and fat; and higher intakes of vitamin C (mg/d), vitamin A ($\mu$g retinol equivalents/d) and Ca (mg/d; Table 3). Higher scores for the snack pattern were associated with higher total energy intake; higher percentages of energy from protein and fat; higher intakes of fibre (g/d), vitamin C, Ca and Fe (mg/d); and lower percentage of energy from carbohydrates and vitamin A intake. Higher scores for the Western pattern were associated with higher percentages of energy from protein and fat; higher intakes of vitamin A, Ca and Fe; lower total energy intake; and lower percentage of energy from carbohydrate and vitamin C intake.
+
+\subsection{Association of dietary patterns with lipid profiles}
+The traditional southern pattern was inversely associated with HDL-C ($\beta = -0.68$; 95\% CI $-1.22, -0.14$; $P < 0.05$). The snack pattern was significantly associated with higher TAG ($\beta = 4.14$; 95\% CI $0.44, 7.84$; $P < 0.05$). The Western pattern was positively associated with TC ($\beta = 2.52$; 95\% CI $1.03, 4.02$; $P < 0.01$) and LDL-C ($\beta = 2.26$; 95\% CI $0.86, 3.66$; $P < 0.01$). Women in the upper quartile of the traditional southern pattern had a decrease in HDL-C ($\beta = -1.86$; 95\% CI $-3.39, -0.33$; $P < 0.05$) when we used dietary pattern scores as a categorical variable (quartiles) in the multivariate linear regression models (Table 4). The snack pattern was significantly associated with higher TAG ($\beta = 4.14$; 95\% CI $0.44, 7.84$; $P < 0.05$). The Western pattern was positively associated with TC ($\beta = 2.52$; 95\% CI $1.03, 4.02$; $P < 0.01$) and LDL-C ($\beta = 2.26$; 95\% CI $0.86, 3.66$; $P < 0.01$). Women in the upper quartile of the Western pattern had an increase in TC ($\beta = 6.28$; 95\% CI $2.04, 10.51$; $P < 0.01$) and LDL-C ($\beta = 6.06$; 95\% CI $2.11, 10.01$; $P < 0.01$).
+
+\section{Discussion}
+The present study identified three distinct dietary patterns among Chinese women: traditional southern, snack and Western. These patterns are similar to those of Chinese adults reported by other research(26--28). The traditional southern pattern, characterized by high intakes of rice, pork, vegetables and aquatic products, was inversely associated with HDL-C. The snack pattern, high in fruits, eggs, cakes and tubers, was linked with increased TAG. The Western pattern, high in poultry, fast foods, milk, organ meats and soft drinks, was associated with increased TC and LDL-C. These associations were observed after adjusting for all confounders in Chinese women.
+
+The traditional Chinese diet includes large amounts of cereals and vegetables and small amounts of animal-source foods(29). Rice and wheat flour are staple foods in the southern and northern regions in China. The people in southern China prefer rice as a staple food with meat and vegetable dishes. We therefore labelled the pattern with high intakes of rice, pork and vegetables as traditional southern. In our study, the traditional southern pattern was inversely associated with HDL-C. This is consistent with studies in Korea(30--32) and may be explained by the high consumption of white rice$\!^{(33-35)}$. In China most of the rice consumed is white rice, which has a high glycaemic index (GI) and is a predominant contributor to the dietary glycaemic load. Regular consumption of high-GI foods could induce chronic hyperglycaemia and an increased workload for pancreatic $\beta$ cells as well as insulin resistance through increased NEFA levels and counter-regulatory hormones. These metabolic changes lead to decreased concentrations of HDL-C$\!^{(35)}$.
+
+The snack pattern in the present study had high loadings mostly for convenience foods, including fruits, eggs, cakes and tubers. Similar dietary patterns have been identified elsewhere$\!^{(36,37)}$. Since 2004 snacking has been increasing rapidly as a dietary component in China. However, to date snacking has not been dominated by savoury snacks, sugary beverages and other unhealthy foods as in the West(38). In China fruit has been one of the most popular snack items(20).
+
+Our study showed that women with a higher snack pattern score were positively associated with high TAG levels. This result is surprising, because fruit is considered a healthy food that is known to reduce blood TAG levels(39). It is plausible that other components of food items in the dietary pattern may counter the beneficial effects of fruit like added sugars from cakes. Several potential mechanisms have been proposed to explain the effect of added sugars on lipid profiles(40). Besides, several short-term controlled feeding studies have found that dietary fructose significantly increases postprandial TAG levels; thus, the fructose content in fruits may play a role in the association(39). TAG level has been reported to be affected by dietary patterns(41--43) characterized by high intake of carbohydrate or foods with a high GI. In our study, the positive associations between the snack pattern and TAG may be attributable to the high GI of the diet. The mechanisms underlying the TAG increase as a result of a high-GI diet are not fully understood. In addition, we found that women with a higher snack pattern score had higher BMI and waist circumference, which indicates that overweight or obesity may be related to higher TAG.
+
+The increase in consumption of animal-source foods in China has been remarkably rapid(44). Pork remains the most common animal-source food, but intakes of eggs, poultry and dairy products are growing quickly(20). The eating behaviour shift is leading to what is often called a Western pattern. The Western pattern has emerged with the nutrition transition in China and has been called a meat pattern or a high-fat pattern in other research(11), although the specific foods contributing to each factor vary in level of contribution. One characteristic of the Western pattern is high content of fat, especially the saturated fat that is an important determinant of serum TC concentration(45). Adair et al. found that the percentage of energy from fat in the diet of Chinese women increased from 22\% in 1991 to 32\% in 2011 and that the change was associated with an 8\% increase in the likelihood of having high LDL-C(46).
+
+In the present study we also found a positive relationship between the Western pattern and increased TC and LDL-C. This is consistent with a study of the Japanese population that found that a Western pattern was associated with higher TC, HDL-C and LDL-C in women(47). However, this is inconsistent with some American studies. A Western dietary pattern characterized by high intakes of red meats, processed meats and high-fat foods was not associated with plasma TC in the Health Professionals Follow-up Study(17). Similarly, in the National Health and Nutrition Examination Survey III, a Western dietary pattern characterized by high intakes of processed meats, eggs, red meats and high-fat dairy products was not associated with serum TC$\!^{(15)}$. Although these discrepancies are attributed to differences in populations, study designs, food groups and analytic methods, the exact explanations have yet to be clarified.
+
+The present study has several limitations. First, the results do not show the causal or resultant relationship between dietary patterns and lipid profiles owing to the cross-sectional data. Second, the statistical methods we used to define the dietary patterns are somewhat subjective, including the consolidation of food items into food groups, the number of factors to extract and the labelling of the patterns. Third, dietary patterns could be different among studies because of different ethnicities/cultures or objectives. It is difficult to compare these findings with other studies. Fourth, the 24h dietary recall method cannot generally evaluate usual dietary intake; the three components explained only 26.2\% of the variance in the foods. Despite these limitations, the present study is the first to reveal the relationship between dietary patterns and blood lipid profiles in Chinese women using data from a large survey. In China women are in charge of the diet at home. The present study usefully provides a better understanding of the dietary habits of women, which relates not only to their health but also to that of their family members, especially their children.
+
+\section{Conclusion}
+In conclusion, we identified three unique dietary patterns among Chinese women: traditional southern, snack and Western. Our findings indicate that the traditional southern pattern, characterized by high intakes of rice, pork, vegetables and aquatic products, was inversely associated with HDL-C. The snack pattern, high in fruits, eggs, cakes and tubers, was linked with increased TAG. The Western pattern, high in poultry, fast foods, milk, organ meats and soft drinks, was associated with increased TC and LDL-C. This information is important for developing interventions and policies addressing dyslipidaemia prevention among women. Further prospective studies are needed to better understand the relationships.
+
+\section*{Acknowledgements}
+This research used data from the 2009 wave of the China Health and Nutrition Survey (CHNS). The authors are grateful to the participants for their involvement in the survey. The authors also thank the team at the National Institute for Nutrition and Health, Chinese Center for Disease Control and Prevention, and the Carolina Population Center, University of North Carolina at Chapel Hill, and the China--Japan Friendship Hospital, Ministry of Health, for support for CHNS 2009. \\
+\textbf{Financial support:} This survey was supported by the National Institutes of Health (NIH; grant numbers R01-HD30880, DK056350 and R01-HD38700); the Fogarty International Center, NIH (grant numbers 5D43TW007709 and 5D43TW009077); and the Carolina Population Center, University of North Carolina at Chapel Hill (grant number 5R24HD050924). The funders had no role in the design, analysis or writing of this article. \\
+\textbf{Conflict of interest:} None. \\
+\textbf{Authorship:} The authors' responsibilities were as follows: J.-G.Z. designed the research plan, conducted data collection, data management, analysed data and wrote the manuscript; Z.-H.W. and H.-J.W. conducted data collection, data management and advised on statistical analysis; J.-G.Z. and B.Z. were responsible for the final content of the manuscript; W.-W.D., C.S., J.Z., H.-R.J., X.-F.J., F.-F.H. and F.-Y.Z. conducted data collection and edited the manuscript for content. All authors read and approved the final manuscript. \\
+\textbf{Ethics of human subject participation:} The study was approved by the institutional review boards of the University of North Carolina at Chapel Hill and the National Institute for Nutrition and Health, Chinese Center for Disease Control and Prevention. All participants gave their written informed consent.
+
+\section*{Supplementary material}
+To view supplementary material for this article, please visit http://dx.doi.org/10.1017/S136898001600197X
+
+% Tables section
+\clearpage
+\section*{Tables}
+
+% Table 1
+\begin{table}[ht]
+\centering
+\caption{Factor-loading matrix$\dagger$ for dietary patterns identified by factor analysis among Chinese women ($n$ 2468) aged 18--80 years, China Health and Nutrition Survey, 2009}
+\label{tab:factor_loadings}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Food} & \textbf{Traditional southern} & \textbf{Snack} & \textbf{Western} \\
+\midrule
+Rice & 0.81 & 二 & 二 \\
+Wheat & $-0.74$ & 1 & 1 \\
+Other cereals & $-0.33$ & 一 & 1 \\
+Tubers & 二 & 0.37 & $-0.53$ \\
+Legumes & 1 & 1 & \\
+Fungi and algae & 一 & 一 & 0.28 \\
+Vegetables & 0.39 & 一 & $-0.31$ \\
+Fruits & & 0.66 & 二 \\
+Pork & 0.47 & 1 & \\
+Other livestock meat & 二 & 二 & 0.30 \\
+Poultry & & 1 & 0.46 \\
+Organ meats & & & 0.36 \\
+Aquatic products & 0.37 & 0.36 & \\
+Milk & 一 & 0.37 & 0.37 \\
+Eggs & & 0.43 & 1 \\
+Nuts & 一 & 0.30 & 二 \\
+Cakes & 一 & 0.41 & 一 \\
+Fast foods & $-0.27$ & 1 & 0.40 \\
+Soft drinks & & 1 & 0.32 \\
+\midrule
+\textbf{Variance explained (\%)} & 11.1 & 8.8 & 6.3 \\
+\bottomrule
+\end{tabular}
+\\
+\small $\dagger$Absolute factor loadings $\geq0.25$ are presented for each food group. Blank cells indicate loadings $<0.25$.
+\end{table}
+
+% Table 2
+\begin{sidewaystable}[ht]
+\centering
+\caption{Participant characteristics$\dagger$ according to quartile (Q) of the three dietary patterns$\ddagger$ identified among Chinese women ($n$ 2468) aged 18--80 years, China Health and Nutrition Survey, 2009}
+\label{tab:characteristics}
+\begin{tabular}{lcccccccccccc}
+\toprule
+ & \multicolumn{4}{c}{\textbf{Traditional southern}} & \multicolumn{4}{c}{\textbf{Snack}} & \multicolumn{4}{c}{\textbf{Western}} \\
+\cmidrule(lr){2-5} \cmidrule(lr){6-9} \cmidrule(lr){10-13}
+ & \multicolumn{2}{c}{\textbf{Q1}} & \multicolumn{2}{c}{\textbf{Q4}} & \multicolumn{2}{c}{\textbf{Q1}} & \multicolumn{2}{c}{\textbf{Q4}} & \multicolumn{2}{c}{\textbf{Q1}} & \multicolumn{2}{c}{\textbf{Q4}} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} \cmidrule(lr){8-9} \cmidrule(lr){10-11} \cmidrule(lr){12-13}
+\textbf{Characteristic} & Mean & SD & Mean & SD & $P$\S & Mean & SD & Mean & SD & $P$\S & Mean & SD \\
+\midrule
+Age (years) & 47.6 & 12.8 & 48.8 & 12.1 & 0.13 & 48.8 & 13.1 & 48.0 & 12.6 & 0.33 & 49.0 & 11.8 \\
+Urban (\%) & 24.0 & & 23.0 & & 0.21 & 15.6 & & 39.1 & & $<$0.0001 & 12.2 & \\
+Education (high) (\%) & 22.5 & & 15.7 & & $<$0.001 & 11.5 & & 34.7 & & $<$0.0001 & 9.9 & \\
+Current smoker (\%) & 3.7 & & 1.9 & & 0.02 & 1.8 & & 5.0 & & $<$0.01 & 5.0 & \\
+Current drinker (\%) & 7.5 & & 9.9 & & 0.25 & 7.0 & & 12.3 & & $<$0.001 & 7.8 & \\
+BMI (kg/m$^2$) & 23.8 & 3.3 & 23.0 & 3.3 & $<$0.0001 & 22.8 & 3.3 & 23.3 & 3.2 & 0.02 & 23.5 & 3.2 \\
+Waist circumference (cm) & 82.3 & 9.4 & 79.2 & 9.8 & $<$0.0001 & 79.0 & 9.8 & 80.6 & 9.6 & $<$0.01 & 81.5 & 9.0 \\
+HDL-C (mg/dl) & 57.3 & 14.9 & 56.8 & 12.7 & 0.53 & 57.1 & 13.5 & 57.3 & 13.7 & 0.54 & 55.9 & 13.4 \\
+LDL-C (mg/dl) & 116.4 & 37.1 & 113.4 & 35.2 & 0.15 & 113.0 & 35.3 & 116.6 & 35.2 & 0.12 & 111.3 & 34.8 \\
+TAG (mg/dl) & 125.9 & 95.1 & 126.0 & 91.7 & 0.99 & 124.1 & 88.4 & 128.8 & 113.2 & 0.49 & 133.7 & 94.8 \\
+TC (mg/dl) & 186.9 & 40.3 & 184.4 & 37.8 & 0.29 & 184.4 & 38.3 & 187.1 & 38.2 & 0.35 & 182.3 & 38.3 \\
+\bottomrule
+\end{tabular}
+\\
+\small $\dagger$Values are presented as mean and standard deviation for continuous variables or as percentage for categorical variables. \\
+$\ddagger$Traditional southern pattern is characterized by high intakes of rice, pork, vegetables and aquatic products. Snack pattern is highly correlated with intakes of fruits, eggs, cakes and tubers. Western pattern is characterized by high intakes of poultry, fast foods, milk, organ meats and soft drinks. \\
+\S We calculated $P$ for trend from a linear regression analysis for continuous variables and the Mantel--Haenszel $\chi^2$ distribution for categorical variables.
+\end{sidewaystable}
+
+% Table 3
+\begin{sidewaystable}[ht]
+\centering
+\caption{Nutrient intakes according to quartile (Q) of the three dietary patterns$\dagger$ identified among Chinese women ($n$ 2468) aged 18--80 years, China Health and Nutrition Survey, 2009}
+\label{tab:nutrients}
+\begin{tabular}{lcccccccccccc}
+\toprule
+ & \multicolumn{4}{c}{\textbf{Traditional southern}} & \multicolumn{4}{c}{\textbf{Snack}} & \multicolumn{4}{c}{\textbf{Western}} \\
+\cmidrule(lr){2-5} \cmidrule(lr){6-9} \cmidrule(lr){10-13}
+ & \multicolumn{2}{c}{\textbf{Q1}} & \multicolumn{2}{c}{\textbf{Q4}} & \multicolumn{2}{c}{\textbf{Q1}} & \multicolumn{2}{c}{\textbf{Q4}} & \multicolumn{2}{c}{\textbf{Q1}} & \multicolumn{2}{c}{\textbf{Q4}} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} \cmidrule(lr){8-9} \cmidrule(lr){10-11} \cmidrule(lr){12-13}
+\textbf{Nutrient} & Mean & SD & Mean & SD & $P$\ddag & Mean & SD & Mean & SD & $P$\ddag & Mean & SD \\
+\midrule
+Energy (kJ/d)\S & 8678 & 97 & 9996 & 97 & $<$0.0001 & 8733 & 102 & 9024 & 102 & $<$0.01 & 9233 & 101 \\
+Energy (kcal/d)\S & 2074.1 & 23.1 & 2389.1 & 23.1 & $<$0.0001 & 2087.3 & 24.3 & 2156.9 & 24.3 & $<$0.01 & 2206.7 & 24.1 \\
+Carbohydrate (\% energy)\hspace{-0.5em}\| & 58.6 & 0.4 & 51.5 & 0.5 & $<$0.0001 & 58.0 & 0.5 & 52.1 & 0.5 & $<$0.0001 & 61.0 & 0.4 \\
+Protein (\% energy)\hspace{-0.5em}\| & 12.3 & 0.1 & 13.0 & 0.1 & $<$0.001 & 11.4 & 0.1 & 13.8 & 0.1 & $<$0.0001 & 11.7 & 0.1 \\
+Fat (\% energy)\hspace{-0.5em}\| & 28.3 & 0.5 & 32.8 & 0.5 & $<$0.0001 & 29.3 & 0.5 & 31.9 & 0.5 & $<$0.001 & 27.0 & 0.5 \\
+Fibre (g/d)\hspace{-0.5em}\| & 14.0 & 0.3 & 10.5 & 0.3 & $<$0.0001 & 10.5 & 0.3 & 14.2 & 0.3 & $<$0.0001 & 13.0 & 0.3 \\
+Vitamin C (mg/d)\hspace{-0.5em}\| & 70.0 & 2.6 & 107.2 & 2.7 & $<$0.0001 & 75.4 & 2.6 & 101.4 & 2.6 & $<$0.0001 & 106.2 & 2.6 \\
+Vitamin A ($\mu$g RE/d)\hspace{-0.5em}\| & 443.8 & 31.9 & 1098.6 & 33.0 & $<$0.0001 & 853.1 & 33.2 & 707.4 & 33.2 & 0.01 & 699.6 & 33.4 \\
+Ca (mg/d)\hspace{-0.5em}\| & 346.1 & 10.2 & 458.4 & 10.6 & $<$0.0001 & 340.1 & 10.1 & 477.3 & 10.2 & $<$0.0001 & 385.6 & 10.3 \\
+Fe (mg/d)\hspace{-0.5em}\| & 20.9 & 0.3 & 21.7 & 0.3 & 0.09 & 19.8 & 0.3 & 22.8 & 0.3 & $<$0.0001 & 21.1 & 0.3 \\
+\bottomrule
+\end{tabular}
+\\
+\small $\dagger$Traditional southern pattern is characterized by high intakes of rice, pork, vegetables and aquatic products. Snack pattern is highly correlated with intakes of fruits, eggs, cakes and tubers. Western pattern is characterized by high intakes of poultry, fast foods, milk, organ meats and soft drinks. \\
+$\ddag$We calculated $P$ for trend from a linear regression analysis. \\
+\S Adjusted for age. \\
+\| Adjusted for age and total energy intake.
+\end{sidewaystable}
+
+% Table 4
+\begin{sidewaystable}[ht]
+\centering
+\caption{Multivariate linear regression model to evaluate the effect of dietary pattern$\dagger$ scores on lipid profiles$\ddag$ among Chinese women ($n$ 2468) aged 18--80 years, China Health and Nutrition Survey, 2009}
+\label{tab:regression}
+\begin{tabular}{lcccccccc}
+\toprule
+ & \multicolumn{2}{c}{\textbf{HDL-C}} & \multicolumn{2}{c}{\textbf{LDL-C}} & \multicolumn{2}{c}{\textbf{TAG}} & \multicolumn{2}{c}{\textbf{TC}} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} \cmidrule(lr){8-9}
+\textbf{Dietary pattern} & $\beta$ & \textbf{95\% CI} & $\beta$ & \textbf{95\% CI} & $\beta$ & \textbf{95\% CI} & $\beta$ & \textbf{95\% CI} \\
+\midrule
+\textit{Traditional southern} & & & & & & & & \\
+\quad $\beta$, continuous & $-0.68$ & $-1.22, -0.14^*$ & $-0.08$ & $-1.45, 1.28$ & 1.70 & $-1.98, 5.39$ & $-0.04$ & $-1.50, 1.42$ \\
+\quad Q1 & 0 & & 0 & & 0 & & 0 & \\
+\quad Q2 & $-0.51$ & $-2.02, 1.00$ & $-3.03$ & $-6.82, 0.76$ & 7.00 & $-3.24, 17.24$ & $-1.55$ & $-5.61, 2.51$ \\
+\quad Q3 & $-1.26$ & $-2.76, 0.24$ & $-0.58$ & $-4.34, 3.17$ & 9.48 & $-0.68, 19.64$ & 0.70 & $-3.32, 4.73$ \\
+\quad Q4 & $-1.86$ & $-3.39, -0.33^*$ & $-2.09$ & $-5.94, 1.75$ & 5.39 & $-5.00, 15.78$ & $-1.83$ & $-5.95, 2.29$ \\
+\addlinespace
+\textit{Snack} & & & & & & & & \\
+\quad $\beta$, continuous & 0.25 & $-0.29, 0.80$ & 0.75 & $-0.61, 2.12$ & 4.14 & $0.44, 7.84^*$ & 1.11 & $-0.35, 2.58$ \\
+\quad Q1 & 0 & & 0 & & 0 & & 0 & \\
+\quad Q2 & $0.01$ & $-1.48, 1.50$ & 1.43 & $-2.31, 5.17$ & 0.02 & $-10.10, 10.13$ & 1.32 & $-2.68, 5.33$ \\
+\quad Q3 & 0.89 & $-0.62, 2.40$ & $-1.34$ & $-5.14, 2.45$ & $-0.75$ & $-11.01, 9.51$ & $-1.68$ & $-5.74, 2.38$ \\
+\quad Q4 & 0.77 & $-0.77, 2.31$ & 2.42 & $-1.45, 6.29$ & 0.44 & $-10.03, 10.92$ & 1.27 & $-2.87, 5.42$ \\
+\addlinespace
+\textit{Western} & & & & & & & & \\
+\quad $\beta$, continuous & 0.43 & $-0.13, 0.99$ & 2.26 & $0.86, 3.66^{**}$ & $-3.16$ & $-6.94, 0.62$ & 2.52 & $1.03, 4.02^{**}$ \\
+\quad Q1 & 0 & & 0 & & 0 & & 0 & \\
+\quad Q2 & 2.01 & $0.52, 3.51^{**}$ & 1.88 & $-1.86, 5.63$ & 2.31 & $-7.83, 12.45$ & 4.09 & $0.07, 8.10^*$ \\
+\quad Q3 & 0.30 & $-1.22, 1.83$ & 5.44 & $1.62, 9.27^{**}$ & $-6.92$ & $-17.28, 3.44$ & 5.07 & $0.97, 9.17^*$ \\
+\quad Q4 & 1.10 & $-0.48, 2.67$ & 6.06 & $2.11, 10.01^{**}$ & $-9.43$ & $-20.13, 1.26$ & 6.28 & $2.04, 10.51^{**}$ \\
+\bottomrule
+\end{tabular}
+\\
+\small HDL-C, HDL cholesterol; LDL-C, LDL cholesterol; TC, total cholesterol; Q, quartile. \\
+$^*P < 0.05$, $^{**}P < 0.01$. \\
+$\dagger$Traditional southern pattern is characterized by high intakes of rice, pork, vegetables and aquatic products. Snack pattern is highly correlated with intakes of fruits, eggs, cakes and tubers. Western pattern is characterized by high intakes of poultry, fast foods, milk, organ meats and soft drinks. \\
+$\ddag$Adjusted for age (18--44, 45--59, 60--80 years), education (low, medium, high), living area (urban, rural), annual household income per family member (continuous), physical activity (continuous), current smoker (yes, no), alcohol drinker (yes, no), BMI (continuous) and total energy intake (continuous).
+\end{sidewaystable}
+
+% References
+\clearpage
+\section*{References}
+\begin{enumerate}
+\item Wang S, Xu L, Jonas JB et al. (2011) Prevalence and associated factors of dyslipidemia in the adult Chinese population. \textit{PLoS One} 6, e17326.
+\item Huang Y, Gao L, Xie X et al. (2014) Epidemiology of dyslipidemia in Chinese adults: meta-analysis of prevalence, awareness, treatment, and control. \textit{Popul Health Metr} 12, 28.
+\item Joint Committee for Developing Chinese Guidelines on Prevention and Treatment of Dyslipidemia in Adults (2007) Chinese guidelines on prevention and treatment of dyslipidemia in adults. \textit{Zhonghua xin xue guan bing za zhi} 35, 390--419.
+\item Yusuf S, Reddy S, Ounpuu S et al. (2001) Global burden of cardiovascular diseases: part I: general considerations, the epidemiologic transition, risk factors, and impact of urbanization. \textit{Circulation} 104, 2746--2753.
+\item Ford ES, Zhao G, Tsai J et al. (2011) Low-risk lifestyle behaviors and all-cause mortality: findings from the National Health and Nutrition Examination Survey III Mortality Study. \textit{Am J Public Health} 101, 1922--1929.
+\item Howard BV, Van Horn L, Hsia J et al. (2006) Low-fat dietary pattern and risk of cardiovascular disease: the Women's Health Initiative Randomized Controlled Dietary Modification Trial. \textit{JAMA} 295, 655--666.
+\item Baigent C, Keech A, Kearney PM et al. (2005) Efficacy and safety of cholesterol-lowering treatment: prospective meta-analysis of data from 90,056 participants in 14 randomised trials of statins. \textit{Lancet} 366, 1267--1278.
+\item Hu FB (2002) Dietary pattern analysis: a new direction in nutritional epidemiology. \textit{Curr Opin Lipidol} 13, 3--9.
+\item Van Horn L (2011) Eating pattern analyses: the whole is more than the sum of its parts. \textit{J Am Diet Assoc} 111, 203.
+\item Tucker KL (2010) Dietary patterns, approaches, and multicultural perspective. \textit{Appl Physiol Nutr Metab} 35, 211--218.
+\item Kant AK (2004) Dietary patterns and health outcomes. \textit{J Am Diet Assoc} 104, 615--635.
+\item Batis C, Mendez MA, Gordon-Larsen P et al. (2016) Using both principal component analysis and reduced rank regression to study dietary patterns and diabetes in Chinese adults. \textit{Public Health Nutr} 19, 195--203.
+\item Borges CA, Rinaldi AE, Conde WL et al. (2015) Dietary patterns: a literature review of the methodological characteristics of the main step of the multivariate analyses. \textit{Rev Bras Epidemiol} 18, 837--857.
+\item Emmett PM, Jones LR \& Northstone K (2015) Dietary patterns in the Avon Longitudinal Study of Parents and Children. \textit{Nutr Rev} 73, Suppl. 3, 207--230.
+\item Kerver JM, Yang EJ, Bianchi L et al. (2003) Dietary patterns associated with risk factors for cardiovascular disease in healthy US adults. \textit{Am J Clin Nutr} 78, 1103--1110.
+\item Lamichhane AP, Liese AD, Urbina EM et al. (2014) Associations of dietary intake patterns identified using reduced rank regression with markers of arterial stiffness among youth with type 1 diabetes. \textit{Eur J Clin Nutr} 68, 1327--1333.
+\item Fung TT, Rimm EB, Spiegelman D et al. (2001) Association between dietary patterns and plasma biomarkers of obesity and cardiovascular disease risk. \textit{Am J Clin Nutr} 73, 61--67.
+\item van Dam RM, Grievink L, Ocke MC et al. (2003) Patterns of food consumption and risk factors for cardiovascular disease in the general Dutch population. \textit{Am J Clin Nutr} 77, 1156--1163.
+\item Popkin BM (2014) Synthesis and implications: China's nutrition transition in the context of changes across other low and middle-income countries. \textit{Obes Rev} 15, Suppl. 1, 60--67.
+\item Zhai FY, Du SF, Wang ZH et al. (2014) Dynamics of the Chinese diet and the role of urbanicity, 1991--2011. \textit{Obes Rev} 15, Suppl. 1, 16--26.
+\item Popkin BM, Du S, Zhai F et al. (2009) Cohort Profile: The China Health and Nutrition Survey -- monitoring and understanding socio-economic and health change in China, 1989--2011. \textit{Int J Epidemiol} 39, 1435--1440.
+\item Zhang B, Zhai FY, Du SF et al. (2014) The China Health and Nutrition Survey, 1989--2011. \textit{Obes Rev} 15, Suppl. 1, 2--7.
+\item Popkin BM (2009) Reducing meat consumption has multiple benefits for the world's health. \textit{Arch Intern Med} 169, 543--545.
+\item Yan S, Li J, Li S et al. (2012) The expanding burden of cardiometabolic risk in China: the China Health and Nutrition Survey. \textit{Obes Rev} 13, 810--821.
+\item World Health Organization (1995) Physical Status: The Use and Interpretation of Anthropometry. Report of a WHO Expert Committee. WHO Technical Report Series no. 854. Geneva.
+\item Wang D, He Y, Li Y et al. (2011) Dietary patterns and hypertension among Chinese adults: a nationally representative cross-sectional study. \textit{BMC Public Health} 11, 925.
+\item Batis C, Sotres-Alvarez D, Gordon-Larsen P et al. (2014) Longitudinal analysis of dietary patterns in Chinese adults from 1991 to 2009. \textit{Br J Nutr} 111, 1441--1451.
+\item Zhang JG, Wang ZH, Wang HJ et al. (2015) Dietary patterns and their associations with general obesity and abdominal obesity among young Chinese women. \textit{Eur J Clin Nutr} 69, 1009--1014.
+\item Du SF, Wang HJ, Zhang B et al. (2014) China in the period of transition from scarcity and extensive undernutrition to emerging nutrition-related non-communicable diseases, 1949--1992. \textit{Obes Rev} 15, Suppl. 1, 8--15.
+\item Song SJ, Lee JE, Paik HY et al. (2012) Dietary patterns based on carbohydrate nutrition are associated with the risk for diabetes and dyslipidemia. \textit{Nutr Res Pract} 6, 349--356.
+\item Song Y \& Joung H (2012) A traditional Korean dietary pattern and metabolic syndrome abnormalities. \textit{Nutr Metab Cardiovasc Dis} 22, 456--462.
+\item Cho YA, Kim J, Cho ER et al. (2011) Dietary patterns and the prevalence of metabolic syndrome in Korean women. \textit{Nutr Metab Cardiovasc Dis} 21, 893--900.
+\item Dong F, Howard AG, Herring AH et al. (2015) White rice intake varies in its association with metabolic markers of diabetes and dyslipidemia across region among Chinese adults. \textit{Ann Nutr Metab} 66, 209--218.
+\item Bahadoran Z, Mirmiran P, Delshad H et al. (2014) White rice consumption is a risk factor for metabolic syndrome in Tehrani adults: a prospective approach in Tehran Lipid and Glucose Study. \textit{Arch Iran Med} 17, 435--440.
+\item Shi Z, Taylor AW, Hu G et al. (2012) Rice intake, weight change and risk of the metabolic syndrome development among Chinese adults: the Jiangsu Nutrition Study (JIN). \textit{Asia Pac J Clin Nutr} 21, 35--43.
+\item Gao X, Yao M, McCrory MA et al. (2003) Dietary pattern is associated with homocysteine and B vitamin status in an urban Chinese population. \textit{J Nutr} 133, 3636--3642.
+\item Tucker KL, Chen H, Hannan MT et al. (2002) Bone mineral density and dietary patterns in older adults: the Framingham Osteoporosis Study. \textit{Am J Clin Nutr} 76, 245--252.
+\item Wang Z, Zhai F, Zhang B \& Popkin BM (2012) Trends in Chinese snacking behaviors and patterns and the social-demographic role between 1991 and 2009. \textit{Asia Pac J Clin Nutr} 21, 253--262.
+\item Yuan C, Lee HJ, Shin HJ et al. (2015) Fruit and vegetable consumption and hypertriglyceridemia: Korean National Health and Nutrition Examination Surveys (KNHANES) 2007--2009. \textit{Eur J Clin Nutr} 69, 1193--1199.
+\item Zhang Z, Gillespie C, Welsh JA et al. (2015) Usual intake of added sugars and lipid profiles among the US adolescents: National Health and Nutrition Examination Survey, 2005--2010. \textit{J Adolesc Health} 56, 352--359.
+\item Park SH, Lee KS \& Park HY (2010) Dietary carbohydrate intake is associated with cardiovascular disease risk in Korean: analysis of the third Korea National Health and Nutrition Examination Survey (KNHANES III). \textit{Int J Cardiol} 139, 234--240.
+\item Jeppesen J, Schaaf P, Jones C et al. (1997) Effects of low-fat, high-carbohydrate diets on risk factors for ischemic heart disease in postmenopausal women. \textit{Am J Clin Nutr} 65, 1027--1033.
+\item Pelkman CL (2001) Effects of the glycemic index of foods on serum concentrations of high-density lipoprotein cholesterol and triglycerides. \textit{Curr Atheroscler Rep} 3, 456--461.
+\item Popkin BM \& Du S (2003) Dynamics of the nutrition transition toward the animal foods sector in China and its implications: a worried perspective. \textit{J Nutr} 133, 11 Suppl. 2, 3898S--3906S.
+\item Ford ES, Mokdad AH, Giles WH et al. (2003) Serum total cholesterol concentrations and awareness, treatment, and control of hypercholesterolemia among US adults: findings from the National Health and Nutrition Examination Survey, 1999 to 2000. \textit{Circulation} 107, 2185--2189.
+\item Adair LS, Gordon-Larsen P, Du SF et al. (2014) The emergence of cardiometabolic disease risk in Chinese children and adults: consequences of changes in diet, physical activity and obesity. \textit{Obes Rev} 15, Suppl. 1, 49--59.
+\item Sadakane A, Tsutsumi A, Gotoh T et al. (2008) Dietary patterns and levels of blood pressure and serum lipids in a Japanese population. \textit{J Epidemiol} 18, 58--67.
+\end{enumerate}
+
+\end{document}
