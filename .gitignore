@@ -17,6 +17,10 @@ Thumbs.db
 .vscode/
 .idea/
 
+# Markdown files (except README.md)
+*.md
+!README.md
+
 # Large data files (uncomment if needed)
 # data/raw/*.csv
 # data/processed/*.rds
